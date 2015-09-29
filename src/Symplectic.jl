@@ -38,7 +38,7 @@ module Symplectic
     return size(s.x::Array{Bool, 2}, t::Int64)
   end
 
-  function repeat(s::Symp; inner=[1 1], outer=[1 1])
+  function repeat(s::Symp; inner=[1, 1], outer=[1, 1])
     return Symp(repeat(s.x, inner=inner, outer=outer), repeat(s.z, inner=inner, outer=outer))
   end
 
